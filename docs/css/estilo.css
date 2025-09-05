@@ -1,0 +1,41 @@
+body{
+
+    background-color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+div{
+    border-style: soli;
+}
+.menu
+{
+    background-color: lightskyblue;
+    padding: 2rem;
+    margin-right: 1rem;
+    width: 30%;
+}
+
+.conteudo{
+    padding: 2rem;
+    width: 70%;
+}
+.item-menu{
+    padding: 0.6rem;
+    margin: 0.7rem 0rem 0.7rem 0rem;
+    list-style: none;
+    border-bottom: solid;
+}
+.item-menu:hover{
+    background-color: lightseagreen;
+}
+section{
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+#sec1{
+    background-color: beige;
+}
