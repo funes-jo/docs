@@ -1,0 +1,90 @@
+/* Define cor de fundo, fonte padrão, cor do texto, e remove margens/padding do body */
+body {
+    background-color: #f0f8ff; /* Azul claro de fundo */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fonte moderna e legível */
+    color: #222; /* Cor padrão do texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o cabeçalho e rodapé */
+header, footer {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 16px 0; /* Espaçamento interno */
+}
+
+/* Estiliza o título principal */
+h1 {
+    background-color: purple; /* Fundo roxo para destaque */
+    margin-top: 32px; /* Espaço acima do título */
+    font-size: 2.5rem; /* Tamanho grande */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+/* Centraliza e organiza o conteúdo principal */
+main {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 32px 0; /* Espaço acima e abaixo */
+}
+
+/* Estiliza o parágrafo de descrição */
+.descricao {
+    max-width: 500px; /* Limita largura */
+    text-align: center; /* Centraliza texto */
+    margin-bottom: 24px; /* Espaço abaixo */
+    font-size: 1.1rem; /* Tamanho de fonte maior */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Estiliza a imagem de perfil */
+img {
+    border-radius: 50%; /* Deixa a imagem circular */
+    max-width: 150px; /* Limita tamanho */
+    border: 3px solid #222; /* Borda escura */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* Sombra suave */
+    margin-bottom: 24px; /* Espaço abaixo */
+}
+
+/* Define cor do texto dos parágrafos como azul escuro */
+p {
+    color: #003366;
+}
+// ...existing code...
+
+/* Menu horizontal */
+nav ul {
+    display: flex;                /* Deixa os itens em linha */
+    justify-content: center;      /* Centraliza o menu */
+    list-style: none;             /* Remove as bolinhas */
+    padding: 0;
+    margin: 16px 0;
+}
+
+nav ul li {
+    margin: 0 16px;               /* Espaço entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none;        /* Remove sublinhado */
+    color: #003366;               /* Cor azul escuro */
+    padding: 8px 16px;            /* Espaçamento interno */
+    border-radius: 4px;           /* Cantos arredondados */
+    transition: background 0.2s;  /* Transição suave */
+    font-weight: bold;
+}
+
+/* Destaca o link ao passar o mouse */
+nav ul li a:hover {
+    background-color: #e0e0ff;    /* Fundo azul claro */
+    color: #222;                  /* Cor do texto escura */
+}
+
+/* Altera cor do link já visitado */
+nav ul li a:visited {
+    color: #800080;               /* Roxo */
+}
+// ...existing
