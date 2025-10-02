@@ -1,0 +1,152 @@
+/* ===================== */
+/* Reset básico */
+/* Remove margens e paddings padrão, define box-sizing para facilitar dimensionamento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================== */
+/* Corpo da página */
+body {
+    font-family: "Arial", sans-serif; /* Fonte padrão */
+    background-color: #f5f5f5; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* ===================== */
+/* Cabeçalho */
+.header {
+    background-color: #2c3e50; /* Fundo escuro */
+    color: #2c3e50; /* Texto branco */
+    padding-bottom: 10px;
+}
+
+/* Flexbox para alinhar imagem e informações lado a lado */
+.header-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre foto e informações */
+    padding: 20px;
+}
+
+/* Foto de perfil */
+.header img {
+    border-radius: 100%; /* Torna a imagem circular */
+    max-width: 150px; /* Largura máxima */
+    border: 2px solid #fff; /* Borda branca */
+}
+
+/* Nome e título */
+.header-info h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.header-info h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* Redes sociais */
+.socials a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s; /* Animação ao passar mouse */
+}
+
+.socials a:hover {
+    color: #f1c40f; /* Cor amarela ao passar mouse */
+}
+
+/* Menu de navegação interno */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #34495e; /* Fundo mais claro que o header */
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f1c40f; /* Cor amarela ao passar mouse */
+}
+
+/* ===================== */
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1000px; /* Limita largura */
+    margin: 20px auto;
+    background: #fff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* ===================== */
+/* Seções */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2c3e50; /* Linha decorativa */
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Experiências e educação */
+.experience, .education, .project {
+    margin-bottom: 20px;
+}
+
+.experience h3, .education h3, .project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Período de experiência / formação */
+.period {
+    display: block;
+    font-size: 0.9rem;
+    color: #777; /* Cinza claro */
+    margin-bottom: 8px;
+}
+
+/* Skills / lista de habilidades */
+.skills {
+    list-style: none; /* Remove marcadores */
+    padding-left: 0;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+/* ===================== */
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column; /* Empilha imagem e info */
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Menu vertical */
+    }
+}

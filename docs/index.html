@@ -1,58 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> <!-- Define que a página está em português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AULA CSS+ TAGS</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Currículo - João Pedro Funes</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+    <!-- Link para ícones do Font Awesome para redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1 style="text-align:center ;">teste</h1>
-    <div class="container">
 
-    
-    <div class="menu"><!-- menu -->
-        <h2>logomarca</h2>
-        <nav>
-            <ul>
-                <li class="item-menu"><a href="#sec1">dados pessoais</a></li>
-                <li class="item-menu"><a href="#sec2">contatos</a></li>
-                <li class="item-menu"><a href="#sec3">formação academica</a></li>
-                <li class="item-menu"><a href="#sec4">experiencia</a></li>
+    <!-- Cabeçalho da página -->
+    <header class="header">
+        <div class="container header-flex">
+            <!-- Foto de perfil -->
+            <img src="profile.perfil.jpeg" alt="João Pedro Funes">
+            
+            <!-- Informações do usuário -->
+            <div class="header-info">
+                <h1>João Pedro Funes</h1> <!-- Nome -->
+                <h2>Estudante de Engenharia de Software</h2> <!-- Título profissional -->
+                <p>Endereço: Rua Gécia 356 · Cambé, PR</p>
+                <p>Telefone: (43) 98821-6741</p>
+                <p>Email: <a href="mailto:funesjoao@gmail.com">funesjoao@gmail.com</a></p>
+                
+                <!-- Redes sociais com ícones -->
+                <div class="socials">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
 
-
-            </ul>
+        <!-- Menu de navegação interno (links para seções da página) -->
+        <nav class="nav-menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#formacao">Formação</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#certificados">Certificados</a>
         </nav>
+    </header>
 
-    </div>
-   <div class="conteudo"><!-- conteudo -->
-    <h1>nome completo</h1>
-    <div id="sec1">
-        <section>
-            <h2>seção 2 (dados pessoais)</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam corrupti tenetur amet quos itaque nihil ex, eligendi odit temporibus voluptas sunt 
-                voluptatibus qui dignissimos quis dolorum veritatis nesciunt! Cum, unde!</p>
-        </section>
-    
-    </div>
-
-    <div id="sec2">
-        <section>
-            <h2>formação academica </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam corrupti tenetur amet quos itaque nihil ex, eligendi odit temporibus voluptas sunt 
-                voluptatibus qui dignissimos quis dolorum veritatis nesciunt! Cum, unde!</p>
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+        <!-- Seção Sobre / Objetivo -->
+        <section id="sobre" class="section">
+            <h2>Sobre</h2>
+            <p>Busco aprimorar meus conhecimentos e crescer profissionalmente contribuindo com minhas habilidades técnicas, capacidade de aprendizado contínuo e comprometimento com resultados.</p>
         </section>
 
+        <!-- Seção Experiências Profissionais -->
+        <section id="experiencias" class="section">
+            <h2>Experiências</h2>
 
-   </div> 
+            <div class="experience">
+                <h3>Supply Chain - Grupo Muffato</h3> <!-- Nome da função / empresa -->
+                <span class="period">Junho 2025 - Presente</span> <!-- Período trabalhado -->
+                <p>Atuação com gestão de agendas no portal, acompanhamento de pedidos e análise de indicadores de desempenho logístico. Participação em planejamento de demanda e melhoria de fluxos internos para otimização de prazos e redução de custos.</p>
+            </div>
 
-   <div id="sec3">
-    <section>
-        <h2>experiencia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam corrupti tenetur amet quos itaque nihil ex, eligendi odit temporibus voluptas sunt 
-                voluptatibus qui dignissimos quis dolorum veritatis nesciunt! Cum, unde!</p>
-    </section>
-   </div>
-   </div>
+            <div class="experience">
+                <h3>Auxiliar Administrativo (Jovem Aprendiz) - Dinamarca Indústria e Comércio de Alimentos</h3>
+                <span class="period">2023 - 2024</span>
+                <p>Responsável pelo estoque, controle de entrada e saída de produtos, conferência de materiais e organização do setor. Experiência em diversas áreas, desenvolvendo organização, trabalho em equipe e proatividade.</p>
+            </div>
+        </section>
+
+        <!-- Formação Acadêmica -->
+        <section id="formacao" class="section">
+            <h2>Formação Acadêmica</h2>
+            <div class="education">
+                <h3>Engenharia de Software - Universidade Positivo Londrina</h3>
+                <span class="period">Fev 2025 - Dez 2028</span>
+            </div>
+            <div class="education">
+                <h3>Ensino Médio - Prof. Helena Kolody</h3>
+                <span class="period">2022 - 2024</span>
+            </div>
+        </section>
+
+        <!-- Skills / Habilidades -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Boa comunicação interpessoal</li>
+                <li>Trabalho em equipe</li>
+                <li>Rápido aprendizado</li>
+                <li>Proatividade</li>
+                <li>Comprometimento</li>
+                <li>Excel Avançado</li>
+                <li>Idiomas: Português e Inglês Intermediário</li>
+            </ul>
+        </section>
+
+        <!-- Projetos (opcional) -->
+        <section id="projetos" class="section">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Projeto de Sistema de Controle de Estoque</h3>
+                <p>Desenvolvimento de um sistema para gerenciamento de estoque de produtos utilizando HTML, CSS e lógica de programação básica.</p>
+            </div>
+        </section>
+
+        <!-- Certificados -->
+        <section id="certificados" class="section">
+            <h2>Certificados</h2>
+            <ul class="skills">
+                <li>Informática Básica - Murialdo ISAP - 60h</li>
+                <li>Qualificação Profissional em Empregabilidade - Murialdo ISAP - 60h</li>
+            </ul>
+        </section>
+    </main>
+
 </body>
 </html>
+
